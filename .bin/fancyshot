@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#Take Screenshot Of Current Window
+#facebook.com/NguyenChanhDai.1408
+
+FOLDER="$HOME/Pictures/Screenshots"
+
+mkdir -p $FOLDER
+
+FILENAME=`date +%Y-%m-%d_%H-%M-%S`
+
+gnome-screenshot -w -f $FILENAME #take screenshot of current window using GnomeScreenshot
+
+convert "$FILENAME" \( +clone -background black -shadow 80x20+0+15 \) +swap -background white -layers merge +repage "$FOLDER/$FILENAME.png" #dropshadow using ImageMagick
+
+xclip -selection clipboard -t image/png -i $FOLDER/$FILENAME.png #paste image to clipboard
+
+rm "$FILENAME" #remove file
+
+echo "Success! Copied to Clipboard"

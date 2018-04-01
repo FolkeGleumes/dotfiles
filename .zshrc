@@ -1,0 +1,1 @@
+/home/joru/.config/zsh/.zshrc
