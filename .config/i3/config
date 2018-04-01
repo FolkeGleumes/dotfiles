@@ -1,0 +1,195 @@
+#!/usr/bin/bash
+
+#=====================================================================
+# general config
+#=====================================================================
+
+set $mod Mod4
+font pango:gohufont 10
+floating_modifier $mod
+
+#=====================================================================
+# general shortcuts
+#=====================================================================
+
+bindsym $mod+Return exec alacritty
+bindsym $mod+Shift+q kill
+bindsym $mod+d exec rofi -show run
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+bindsym $mod+Shift+e exit
+
+#=====================================================================
+# general startup
+#=====================================================================
+
+exec_always --no-startup-id setxkbmap de
+exec --no-startup-id compton --config ~/.config/compton/config
+exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper.png
+
+#=====================================================================
+# Navigation
+#=====================================================================
+
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+odiaeresis focus right
+
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+bindsym $mod+1 workspace $ws1; exec --no-startup-id i3-msg [id="$(cat .stickidtmp)"] move workspace current
+bindsym $mod+2 workspace $ws2; exec --no-startup-id i3-msg [id="$(cat .stickidtmp)"] move workspace current
+bindsym $mod+3 workspace $ws3; exec --no-startup-id i3-msg [id="$(cat .stickidtmp)"] move workspace current
+bindsym $mod+4 workspace $ws4; exec --no-startup-id i3-msg [id="$(cat .stickidtmp)"] move workspace current
+bindsym $mod+5 workspace $ws5; exec --no-startup-id i3-msg [id="$(cat .stickidtmp)"] move workspace current
+bindsym $mod+6 workspace $ws6; exec --no-startup-id i3-msg [id="$(cat .stickidtmp)"] move workspace current
+bindsym $mod+7 workspace $ws7; exec --no-startup-id i3-msg [id="$(cat .stickidtmp)"] move workspace current
+bindsym $mod+8 workspace $ws8; exec --no-startup-id i3-msg [id="$(cat .stickidtmp)"] move workspace current
+bindsym $mod+9 workspace $ws9; exec --no-startup-id i3-msg [id="$(cat .stickidtmp)"] move workspace current
+bindsym $mod+0 workspace $ws0; exec --no-startup-id i3-msg [id="$(cat .stickidtmp)"] move workspace current
+
+#=====================================================================
+# Window management
+#=====================================================================
+
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+odiaeresis move right
+
+bindsym $mod+Shift+m move workspace to output right
+bindsym $mod+Shift+n move workspace to output left
+
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws0
+
+bindsym $mod+h split h
+bindsym $mod+v split v
+bindsym $mod+f fullscreen toggle
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+bindsym $mod+a focus parent
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+
+#=====================================================================
+# Workspaces
+#=====================================================================
+
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws0 "0"
+
+#=====================================================================
+# Modes
+#=====================================================================
+
+mode "resize" {
+        
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym odiaeresis resize grow width 10 px or 10 ppt
+
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+set $mode_display Screen (1) INTERNAL ON (2) EXTERNAL ON (3) INTERNAL OFF (4) EXTERNAL OFF
+mode "$mode_display" {
+    bindsym 1 exec --no-startup-id xrandr --output eDP1 --mode 1920x1080, mode "default"
+    bindsym 2 exec --no-startup-id xrandr --output HDMI2 --auto --same-as eDP1, mode "default"
+    bindsym 3 exec --no-startup-id xrandr --output eDP1 --off, mode "default"
+    bindsym 4 exec --no-startup-id xrandr --output HDMI2 --off, mode "default"
+    
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+F2 mode "$mode_display"
+
+#=====================================================================
+# Bar
+#=====================================================================
+
+bar {
+  status_command i3status 
+  tray_padding 1
+  colors {
+    separator #928374
+    background #282828
+    statusline #ebdbb2
+    focused_workspace #689d6a #689d6a #282828
+    active_workspace #1d2021 #1d2021 #928374
+    inactive_workspace #32302f #32302f #928374
+    urgent_workspace #cc241d #cc241d #ebdbb2
+  }
+}
+
+
+#=====================================================================
+# User config
+#=====================================================================
+
+for_window [class="Tor Browser"] floating enabled
+new_window none
+new_float none
+gaps inner 10
+
+#=====================================================================
+# User startup
+#=====================================================================
+
+exec --no-startup-id redshift-gtk
+
+#=====================================================================
+# User shortcuts
+#=====================================================================
+
+bindsym $mod+Shift+p exec --no-startup-id "xdpyinfo | grep focus | cut -d ' ' -f 4 | cut -d, -f 1 > .stickidtmp"
+bindsym $mod+Shift+o exec --no-startup-id "rm .stickidtmp"
+
+bindsym $mod+o exec --no-startup-id i3lock-fancy
+bindsym $mod+p exec --no-startup-id fancyshot
+bindsym XF86AudioMute exec --no-startup-id pamixer -t
+bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -d 5
+bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 5
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl prev
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioStop exec --no-startup-id playerctl stop
+bindsym XF86AudioMicMute exec --no-startup-id amixer set Capture toggle > /dev/null
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
