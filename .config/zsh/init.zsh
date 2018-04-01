@@ -7,6 +7,7 @@ antigen bundle command-not-found
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle marzocchi/zsh-notify
+antigen bundle zsh-users/zsh-completions
 
 antigen theme bhilburn/powerlevel9k
 
