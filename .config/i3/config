@@ -25,7 +25,7 @@ bindsym $mod+Shift+e exit
 
 exec_always --no-startup-id setxkbmap de
 exec --no-startup-id compton --config ~/.config/compton/config
-exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper.png
+exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/current
 exec --no-startup-id polybar bar
 
 #=====================================================================
