@@ -2,6 +2,8 @@ source ~/.config/zsh/antigen.zsh
 
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle marzocchi/zsh-notify
+
 antigen theme bhilburn/powerlevel9k
 
 antigen apply
