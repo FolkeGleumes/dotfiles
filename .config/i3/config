@@ -26,6 +26,7 @@ bindsym $mod+Shift+e exit
 exec_always --no-startup-id setxkbmap de
 exec --no-startup-id compton --config ~/.config/compton/config
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper.png
+exec --no-startup-id polybar bar
 
 #=====================================================================
 # Navigation
@@ -139,25 +140,6 @@ mode "$mode_display" {
     bindsym Escape mode "default"
 }
 bindsym $mod+F2 mode "$mode_display"
-
-#=====================================================================
-# Bar
-#=====================================================================
-
-bar {
-  status_command i3status 
-  tray_padding 1
-  colors {
-    separator #928374
-    background #282828
-    statusline #ebdbb2
-    focused_workspace #689d6a #689d6a #282828
-    active_workspace #1d2021 #1d2021 #928374
-    inactive_workspace #32302f #32302f #928374
-    urgent_workspace #cc241d #cc241d #ebdbb2
-  }
-}
-
 
 #=====================================================================
 # User config
