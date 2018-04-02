@@ -7,7 +7,7 @@ set laststatus=2
 syntax on
 
 " to be applied after filetype to overwrite
-set noexpandtab
+set expandtab
 set tabstop=4 "changed for code later
 set softtabstop=4 " backspace now removes up to $softtabstop spaces at once
 set shiftwidth=4 " how much < and > shift indentation

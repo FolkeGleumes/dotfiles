@@ -1,2 +1,3 @@
 export EDITOR=nvim
-export PATH=~/.bin:$PATH
+export PATH=$PATH:~/.bin
+export PATH="$PATH:/var/lib/snapd/snap/bin"
