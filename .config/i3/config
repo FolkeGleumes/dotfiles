@@ -42,16 +42,16 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-bindsym $mod+1 workspace $ws1; exec --no-startup-id i3-msg [id="$(cat .stickidtmp)"] move workspace current
-bindsym $mod+2 workspace $ws2; exec --no-startup-id i3-msg [id="$(cat .stickidtmp)"] move workspace current
-bindsym $mod+3 workspace $ws3; exec --no-startup-id i3-msg [id="$(cat .stickidtmp)"] move workspace current
-bindsym $mod+4 workspace $ws4; exec --no-startup-id i3-msg [id="$(cat .stickidtmp)"] move workspace current
-bindsym $mod+5 workspace $ws5; exec --no-startup-id i3-msg [id="$(cat .stickidtmp)"] move workspace current
-bindsym $mod+6 workspace $ws6; exec --no-startup-id i3-msg [id="$(cat .stickidtmp)"] move workspace current
-bindsym $mod+7 workspace $ws7; exec --no-startup-id i3-msg [id="$(cat .stickidtmp)"] move workspace current
-bindsym $mod+8 workspace $ws8; exec --no-startup-id i3-msg [id="$(cat .stickidtmp)"] move workspace current
-bindsym $mod+9 workspace $ws9; exec --no-startup-id i3-msg [id="$(cat .stickidtmp)"] move workspace current
-bindsym $mod+0 workspace $ws0; exec --no-startup-id i3-msg [id="$(cat .stickidtmp)"] move workspace current
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws0
 
 #=====================================================================
 # Window management
@@ -159,9 +159,6 @@ exec --no-startup-id redshift-gtk
 #=====================================================================
 # User shortcuts
 #=====================================================================
-
-bindsym $mod+Shift+p exec --no-startup-id "xdpyinfo | grep focus | cut -d ' ' -f 4 | cut -d, -f 1 > .stickidtmp"
-bindsym $mod+Shift+o exec --no-startup-id "rm .stickidtmp"
 
 bindsym $mod+o exec --no-startup-id i3lock-fancy
 bindsym $mod+p exec --no-startup-id fancyshot
