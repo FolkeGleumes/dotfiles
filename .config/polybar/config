@@ -119,7 +119,7 @@ label = %gb_used%
 [module/date]
 type = internal/date
 interval = 1.0
-format-prefix="    "
+format-prefix="    "
 format-prefix-foreground = ${colors.primary}
 date = "%d.%m. %H:%M"
 
