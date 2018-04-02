@@ -6,6 +6,7 @@ Plug 'https://github.com/suan/vim-instant-markdown.git'
 Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'morhetz/gruvbox'
 
 Plug 'https://github.com/roxma/nvim-completion-manager.git',
 

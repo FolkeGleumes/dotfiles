@@ -31,3 +31,6 @@ set undolevels=1000  "how many undos
 set undoreload=10000 "how many lines to save for undo
 
 let g:airline_powerline_fonts = 1
+colorscheme gruvbox
+set background=dark
+
