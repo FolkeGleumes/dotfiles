@@ -4,6 +4,8 @@ background-alt = #282828
 foreground = #ebdbb2
 foreground-alt = #ebdbb2
 primary = #458588
+primary-blue = #458588
+primary-aqua = #8ec07c
 alert = #fe8019
 
 [bar/bar]
@@ -35,7 +37,7 @@ border-right-size = 10
 
 modules-left = i3
 modules-center = title
-modules-right = memory wifi date battery
+modules-right = spotify memory wifi date battery
 
 tray-position = right
 tray-padding = 4
@@ -127,3 +129,11 @@ type = internal/xwindow
 format-foreground = ${colors.foreground}
 format-padding = 1
 label-maxlen = 50
+
+[module/spotify]
+type = custom/script
+exec = ~/.config/polybar/spotify.sh %artist% - %title%
+tail = true
+format-prefix="    "
+format-prefix-foreground = ${colors.primary-aqua}
+interval = 2
