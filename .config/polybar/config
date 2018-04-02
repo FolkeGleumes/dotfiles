@@ -3,9 +3,8 @@ background = #282828
 background-alt = #282828
 foreground = #ebdbb2
 foreground-alt = #ebdbb2
-primary = #fe8019
-secondary = #f1c40f
-alert = #e67e22
+primary = #458588
+alert = #fe8019
 
 [bar/bar]
 

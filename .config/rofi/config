@@ -74,16 +74,16 @@ rofi.show-icons: false
 ! All colors are either hex #rrggbb, #aarrggbb or argb:aarrggbbvalues or X11 color names.
 
 ! Window colors: bg border sep
-rofi.color-window: argb:aa607D8B,#00000000,#009688
+rofi.color-window: argb:aa282828,#00000000,#009688
 
 ! Normal row: bg fg bg-alt hl-bg hl-fg
-rofi.color-normal: #00000000,#ffffff,#00000000,#00000000,#FF9800
+rofi.color-normal: #00000000,#ebdbb2,#00000000,#00000000,#458588
 
 ! Urgent row: bg fg bg-alt hl-bg hl-fg
-rofi.color-urgent: #00000000,#ffffff,#00000000,#00000000,#FF9800
+rofi.color-urgent: #00000000,#ebdbb2,#00000000,#00000000,#458588
 
 ! Active row: bg fg bg-alt hl-bg hl-fg
-rofi.color-active: #00000000,#ffffff,#00000000,#00000000,#FF9800
+rofi.color-active: #00000000,#ebdbb2,#00000000,#00000000,#458588
 
 ! Set border width in pixels.
 rofi.bw: 0
