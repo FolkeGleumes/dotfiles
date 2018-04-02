@@ -1,5 +1,5 @@
 [global]
-    font = lemon 8
+    font = RobotoMono 11
     markup = yes
     format = "%s\n%b"
     sort = yes
@@ -27,9 +27,10 @@
     browser = /usr/bin/firefox
     icon_position = left
     icon_folders = /usr/share/icons/Notifications
+	max_icon_size = 65
 
 [frame]
-    color = "#ffffff"
+    color = "#282828"
     width = 0
 
 [shortcuts]
@@ -39,22 +40,22 @@
     history = ctrl+shift
  
 [urgency_low]
-    background = "#ffffff"
-    foreground = "#595959"
+    background = "#282828"
+    foreground = "#ebdbb2"
     timeout = 5
  
 [urgency_normal]
-    background = "#ffffff"
-    foreground = "#595959"
+    background = "#282828"
+    foreground = "#ebdbb2"
     timeout = 5
  
 [urgency_critical]
-    background = "#ffffff"
-    foreground = "#595959"
+    background = "#282828"
+    foreground = "#ebdbb2"
     timeout = 5
 
 [Spotify]
     appname = Spotify
     format = "<b>Now Playing:</b>\n%s\n%b"
-    new_icon = Spotify
+    foreground = "#8ec07c"
     timeout = 10
