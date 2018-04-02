@@ -161,7 +161,8 @@ exec --no-startup-id redshift-gtk
 #=====================================================================
 
 bindsym $mod+o exec --no-startup-id i3lock-fancy
-bindsym $mod+p exec --no-startup-id fancyshot
+bindsym $mod+p exec --no-startup-id gnome-screenshot -f "~/Pictures/Screenshots/`date +"%Y-%m-%d_%H-%M-%S"`.png"
+bindsym $mod+Shift+p exec --no-startup-id fancyshot
 bindsym XF86AudioMute exec --no-startup-id pamixer -t
 bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -d 5
 bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 5
@@ -170,5 +171,5 @@ bindsym XF86AudioPrev exec --no-startup-id playerctl prev
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
 bindsym XF86AudioStop exec --no-startup-id playerctl stop
 bindsym XF86AudioMicMute exec --no-startup-id amixer set Capture toggle > /dev/null
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 2
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 2
