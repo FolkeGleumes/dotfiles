@@ -110,7 +110,6 @@ label-disconnected = ""
 
 [module/memory]
 type = internal/memory
-interval = 2.5
 format-prefix = "    "
 format-prefix-foreground = ${colors.primary}
 format = <label>
