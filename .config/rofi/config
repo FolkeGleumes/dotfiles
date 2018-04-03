@@ -77,13 +77,13 @@ rofi.show-icons: false
 rofi.color-window: argb:aa282828,#00000000,#009688
 
 ! Normal row: bg fg bg-alt hl-bg hl-fg
-rofi.color-normal: #00000000,#ebdbb2,#00000000,#00000000,#458588
+rofi.color-normal: #00000000,#ebdbb2,#00000000,#00000000,#b8bb26
 
 ! Urgent row: bg fg bg-alt hl-bg hl-fg
-rofi.color-urgent: #00000000,#ebdbb2,#00000000,#00000000,#458588
+rofi.color-urgent: #00000000,#ebdbb2,#00000000,#00000000,#b8bb26
 
 ! Active row: bg fg bg-alt hl-bg hl-fg
-rofi.color-active: #00000000,#ebdbb2,#00000000,#00000000,#458588
+rofi.color-active: #00000000,#ebdbb2,#00000000,#00000000,#b8bb26
 
 ! Set border width in pixels.
 rofi.bw: 0
