@@ -13,7 +13,7 @@
 
 ### Terminal
 
-* alacritty
+* [alacritty](https://github.com/jwilm/alacritty)
 * zsh
 
 ### Utils
