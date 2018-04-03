@@ -62,8 +62,8 @@ label-visible-underline = #555555
 label-visible-padding = 5
 
 label-urgent = %index%
-label-urgent-foreground = ${colors.alert}
-label-urgent-background = #bd2c40
+label-urgent-foreground = ${colors.background}
+label-urgent-background = ${colors.alert}
 label-urgent-padding = 5
 
 [module/battery]
