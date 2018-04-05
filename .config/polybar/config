@@ -16,6 +16,7 @@ font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=9;1"
 font-3 = "Font Awesome 5 Brands:pixelsize=9;1"
 
 monitor = ${env:MONITOR:eDP-1}
+enable-ipc = true
 
 fixed-center = true
 
