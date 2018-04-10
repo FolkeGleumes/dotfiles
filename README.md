@@ -23,3 +23,7 @@
 * amixer
 * pamixer
 * playerctl
+
+### Fonts
+
+* [nerd-fonts-complete](https://aur.archlinux.org/packages/nerd-fonts-complete/)
