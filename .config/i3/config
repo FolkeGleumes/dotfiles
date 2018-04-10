@@ -20,15 +20,6 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exit
 
 #=====================================================================
-# general startup
-#=====================================================================
-
-exec_always --no-startup-id setxkbmap de
-exec --no-startup-id compton --config ~/.config/compton/config
-exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/current
-exec --no-startup-id polyrun
-
-#=====================================================================
 # Navigation
 #=====================================================================
 
@@ -149,6 +140,15 @@ for_window [class="Tor Browser"] floating enabled
 new_window none
 new_float none
 gaps inner 10
+
+#=====================================================================
+# general startup
+#=====================================================================
+
+exec_always --no-startup-id setxkbmap de
+exec --no-startup-id compton --config ~/.config/compton/config
+exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/current
+exec --no-startup-id polyrun
 
 #=====================================================================
 # User startup
