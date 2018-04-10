@@ -13,7 +13,7 @@
 
 ### Terminal
 
-* [alacritty](https://github.com/jwilm/alacritty)
+* [alacritty](https://github.com/jwilm/alacritty) or [alacritty-scrollback](https://aur.archlinux.org/packages/alacritty-scrollback-git/)
 * zsh
 
 ### Utils
