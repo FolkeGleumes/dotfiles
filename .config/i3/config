@@ -154,7 +154,6 @@ exec --no-startup-id polyrun
 # User startup
 #=====================================================================
 
-exec --no-startup-id redshift-gtk
 exec --no-startup-id nm-applet
 
 #=====================================================================
