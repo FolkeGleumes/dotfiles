@@ -1,4 +1,4 @@
-# Dotfiles for Arch on Thinkpad Yoga S1
+# Dotfiles for Arch on my desktop
 
 ![Imgur Image](https://i.imgur.com/YJS4rpM.png)
 
