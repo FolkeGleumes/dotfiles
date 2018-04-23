@@ -161,7 +161,7 @@ exec --no-startup-id nm-applet
 
 bindsym $mod+o exec --no-startup-id dm-tool lock
 bindsym $mod+p exec --no-startup-id gnome-screenshot -f ~/Pictures/Screenshots/`date +'%Y-%m-%d_%H-%M-%S'`.png
-bindsym $mod+Shift+p exec --no-startup-id fancyshot
+bindsym $mod+Shift+p exec --no-startup-id "HOME/.bin/fancyshot"
 bindsym XF86AudioMute exec --no-startup-id pamixer -t
 bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -d 5
 bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 5
