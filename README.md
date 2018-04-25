@@ -27,6 +27,7 @@ Visit [this post](https://developer.atlassian.com/blog/2016/02/best-way-to-store
 * amixer
 * pamixer
 * playerctl
+* [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen)
 
 ### Fonts
 
