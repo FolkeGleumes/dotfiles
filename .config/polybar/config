@@ -49,6 +49,10 @@ tray-background = ${colors.background}
 strip-wsnumbers = true
 type = internal/i3
 format = <label-state> <label-mode>
+scroll-up = i3-msg workspace next_on_output
+scroll-down = i3-msg workspace prev_on_output
+pin-workspaces = true
+index-sort = true
 
 label-focused = %index%
 label-focused-foreground = ${colors.background}
