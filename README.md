@@ -2,6 +2,10 @@
 
 ![Imgur Image](https://i.imgur.com/YJS4rpM.png)
 
+## Setup
+
+Visit [this post](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/) by Nicola Paolucci.
+
 ## Dependecies
 
 ### Desktop
@@ -27,3 +31,5 @@
 ### Fonts
 
 * [nerd-fonts-complete](https://aur.archlinux.org/packages/nerd-fonts-complete/)
+* ttf-font-awesome
+* ttf-roboto

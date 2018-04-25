@@ -26,7 +26,7 @@
     dmenu = /usr/bin/dmenu -p dunst
     browser = /usr/bin/firefox
     icon_position = left
-    icon_folders = /usr/share/icons/Notifications
+    icon_folders = /usr/share/icons/Paper/16x16/status
 	max_icon_size = 65
 
 [frame]
