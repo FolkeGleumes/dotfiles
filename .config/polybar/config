@@ -40,12 +40,24 @@ border-right-size = 10
 
 modules-left = i3
 modules-center = title
-modules-right = spotify memory wifi date battery
+modules-right = spotify volume memory wifi date battery
 
 tray-position = right
 tray-padding = 4
 tray-maxsize = 16
 tray-background = ${colors.background}
+
+[module/volume]
+type = internal/volume
+master-soundcard = default
+speaker-soundcard = default
+headphone-soundcard = default
+
+format-volume = <ramp-volume> <label-volume>
+label-muted =  %percentage%%
+label-muted-foreground = ${colors.alert}
+ramp-volume-0 = 
+ramp-volume-1 = 
 
 [module/i3]
 strip-wsnumbers = true
