@@ -148,7 +148,7 @@ exec_always --no-startup-id setxkbmap de
 exec_always --no-startup-id compton --config ~/.config/compton/config
 exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/current
 exec_always --no-startup-id "$HOME/.bin/polyrun"
-exec --no-startup-id betterlockscreen -u ~/Pictures/Wallpapers/current
+exec_always --no-startup-id betterlockscreen -u ~/Pictures/Wallpapers/current
 
 #=====================================================================
 # User startup
