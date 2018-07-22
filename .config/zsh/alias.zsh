@@ -10,7 +10,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # ls
 #
 
-alias ls='ls --color=auto' # enable color by default
+alias ls='ls --color=auto --group-directories-first' # enable color by default
 alias l='ls -1A'         # Lists in one column, hidden files.
 alias ll='ls -lh'
 alias la='ll -A'         # Lists human readable sizes, hidden files.
