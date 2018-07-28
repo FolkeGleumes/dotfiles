@@ -1,6 +1,12 @@
 # General aliases
 
 #
+# vim
+#
+
+alias svim="sudo nvim"
+
+#
 # Config management
 #
 
