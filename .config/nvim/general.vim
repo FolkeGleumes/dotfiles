@@ -25,6 +25,8 @@ set hlsearch
 set directory=/tmp
 set backupdir=/tmp
 
+set clipboard+=unnamedplus
+
 set undofile
 set undodir=$HOME/.vim/undo
 set undolevels=1000  "how many undos
