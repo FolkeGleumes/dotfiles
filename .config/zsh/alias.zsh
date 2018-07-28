@@ -48,3 +48,13 @@ alias repou='repo -Syu'
 #
 
 function tssh() {/usr/bin/ssh -t $@ "tmux attach || tmux new"}
+
+#
+# git
+#
+
+alias gaa='git add --all'
+alias gcm='git commit -m'
+alias gpo='git push origin'
+alias gst='git status'
+alias gdf='git diff'
